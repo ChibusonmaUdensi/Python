@@ -9,3 +9,5 @@ start = 1
 end = 20000
 result = sum_of_multiples_of_10(start, end)
 print("Sum of multiples of 10 between", start, "and", end, "is:", result)
+
+print(sum)
