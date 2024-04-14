@@ -1,23 +1,22 @@
-def CollectionRate():
-	number = int(input("Number of successful delivery: "))
+def calculate_rider_payment():
+    base_pay = 5000
+    amount_per_parcel = 500
 
+    successful_deliveries = int(input("Enter the number of successful deliveries: "))
 
+    if successful_deliveries < 50:
+        commission_amount = 160
+    elif 50 <= successful_deliveries <= 59:
+        commission_amount = 200
+    elif 60 <= successful_deliveries <= 69:
+        commission_amount = 250
+    else:
+        commission_amount = 500
 
-if number < 50:
-	result = (number * 160) + 5000
-	return result
+    
+    commission = successful_deliveries * commission_amount
+    total_wage = commission + base_pay
 
-elif  50 <= number <= 59:
-	result = (number * 200) + 5000
-	return result
+    return total_wage
 
-elif 60 <= number <=69:
-	result = (number * 250) + 5000
-	return result
-
-elif number >= 70:
-	result = (number * 500) + 5000
-	return result
-
-
-print(CollectionRate())
+print(calculate_rider_payment())
