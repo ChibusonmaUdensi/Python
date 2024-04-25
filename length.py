@@ -1,12 +1,8 @@
 
-def calculate_length(string):
+def findlen(str):
+	return sum(1 for i in str)
 
-	l
-	return len(string)
 
-word = 'semicolon'
 
-length = calculate_length[word]
-
-print(length)
-
+str = "semicolon"
+print(findlen(str))
