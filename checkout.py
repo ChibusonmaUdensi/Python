@@ -107,10 +107,7 @@ print("    ", "ITEM",  "        ",  "QUANTITY",  "        ",  "PRICE", "        
 
 print("--------------------------------------------------------------")
 
-sum_total += all_prices[index]   * all_quantity[index]
-discount = sum_total * discount_given / 100
-VAT_amount = sum_total * (17.50 / 100)
-bill_total = sum_total - discount + VAT_amount
+
 balance =  amount - bill_total
 
 
